@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="db.Versao" table="ver_versao">
+      <meta attribute="class-description">
+        Classe que guarda as versoes do codigo
+      </meta>
+      <id name="id" type="int" column="ver_id">
+        <generator class="native"/>
+      </id>
+      <property name="codigo" type="string" column="VER_CODIGO" not-null="false"/>
+      <property name="data_versao" type="date" column="ver_data" not-null="false"/>
+      <many-to-one name="user" class="db.Usuario" column="ver_usu_id" not-null="true" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+tkMain|int main()
+tkIf|if
+tkOpenFunc|{
+tkCloseFunc|}
+tkElse|else
+tkI|int
+tkR|float
+tkFor|for
+tkSoma|+
+tkSub|-
+tkMult|*
+tkDiv|/
+tkGreater|>
+tkMinor|<
+tkEquals|==
+tkGreatEq|>=
+tkMinorEq|<=
+tkPrint|printf
+tkAtrib|=
+tkEndLine|;
+tkAbreComent|/*
+tkFechaComent|*/
+tkDif|!=

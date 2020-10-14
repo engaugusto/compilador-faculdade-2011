@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="db.Usuario" table="usu_usuario">
+      <meta attribute="class-description">
+          Essa classe contem os usuários
+      </meta>
+      <id name="id" type="int" column="usu_id">
+          <generator class="native"/>
+      </id>    
+      <property name="nome" type="string" column="usu_nome" not-null="false"/>
+      <property name="login" type="string" column="usu_login" not-null="true"/>
+      <property name="pwd" type="string" column="usu_password" not-null="true"/>
+      <property name="ativo" type="boolean" column="usu_ativo" not-null="true"/>
+  </class>
+</hibernate-mapping>

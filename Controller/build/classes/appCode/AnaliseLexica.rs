@@ -1,0 +1,2 @@
+appCode.AnaliseLexica
+appCode.RetornoCheckVariable
